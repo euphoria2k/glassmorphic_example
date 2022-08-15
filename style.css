@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+   font-weight: 600;
+   font-size: 3rem;
+   opacity: 0.8; 
+}
+
+h2, p{
+    font-weight: 500;
+    opacity: 0.8;
+    font-size: 18px; 
+ }
+
+h3{
+    font-size: 2rem;
+    opacity: 0.8; 
+}
+
+h3{
+    font-weight: 600;
+    opacity: 0.8; 
+}
+
+main {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to left top, rgb(51, 0, 255), rgb(153, 0, 255));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass{
+    background: white;
+    min-height: 80vh;
+    width: 60%;
+    background: linear-gradient(to right bottom, rgba(255,255,255, 0.7), rgba(255,255,255,0.3));
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(1rem);
+    display: flex;
+}
+
+img.profile{
+    width: 20%;
+    height: auto;
+    border-radius: 50%
+}
+
+img.t7{
+    width: 72px;
+    height: auto;
+    border-radius: 50%
+}
+
+img.mk11{
+    width: 72px;
+    height: auto;
+    border-radius: 50%
+}
+
+img.tony{
+    width: 72px;
+    height: auto;
+    border-radius: 50%
+}
+
+p.hrs, p.status-type{
+    font-size: 14px;
+}
+
+h2.title{
+    font-weight: bold;
+}
+
+.shape1, .shape2, .shape3, .shape4, .shape5, .shape6{
+    background: white;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.8), rgba(255,255,255,0.3));
+    height: 10rem;
+    width: 10rem;
+    position: absolute;
+    z-index: 1;
+}
+
+.shape1{
+    top: 5%;
+    left: 15%;
+    border-radius: 2rem;
+    animation: rotation1 6s infinite linear;
+}
+
+@keyframes rotation1 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-359deg);
+    }
+  }
+
+.shape2{
+    bottom: 5%;
+    right: 15%;
+    border-radius: 50%;
+}
+
+.shape3{
+    bottom: 5%;
+    left: 18%;
+    rotate: 45deg;
+    width: 0;
+	height: 0;
+	
+	/* border-right: 50px solid  transparent; 
+	border-left: 50px solid  transparent; 
+    border-bottom: 86.60254px solid; */
+    
+    /* border-style: solid;
+    border-width: 0 50px 86.60254px 50px; */
+    /* border-image: linear-gradient(to right bottom, rgba(255,255,255,0.8), rgba(255,255,255,0.3)); */
+
+    border-style: solid;
+    border-width: 0 50px 86.60254px 50px;
+    border-color: transparent transparent rgba(255, 255, 255, 0.8) transparent;
+    animation: rotation2 6s infinite linear;
+}
+
+@keyframes rotation2 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+.shape4{
+    rotate: 20deg;
+    bottom: 35%;
+    right: 13%;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    background: linear-gradient(to right bottom, rgba(255,255,255,1), rgba(255,255,255,0.3));
+    animation: rotation3 6s infinite linear;
+}
+
+@keyframes rotation3 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+.shape5{
+    top: 9%;
+    right: 15%;
+    border-radius: 50%;
+}
+
+.shape6{
+    bottom: 37%;
+    left: 16%;
+    border-radius: 50%;
+}
+
+.dashboard{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem 0 0 2rem;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background: linear-gradient(to right bottom, rgba(255,255,255, 0.2), rgba(255,255,255,0.2));
+}
+
+.link{
+    display: flex;
+    margin: 2rem 0rem;
+    padding: 1rem 5rem;
+    align-items: center;
+}
+
+.link h2{
+    padding: 0rem 2rem;
+}
+
+.games{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3rem
+}
+
+.card{
+    display: flex;
+    background: linear-gradient(to left top, rgba(255,255,255, 0.5), rgba(255,255,255,0.3));
+    border-radius: 1rem;
+    margin: 2rem 0rem;
+    padding: 2rem;
+    box-shadow: 6px 6px 20px rgba(122,122,122, 0.2);
+    justify-content: space-between;
+    align-items: left;
+}
+
+.card-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
